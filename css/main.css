@@ -58,10 +58,6 @@ li{
   transition: 0.5s ease;
 }
 
-.flex-item:hover .overlay{
-  opacity: 1;
-}
-
 /*************************************/
 /* index.html
 /*************************************/
@@ -321,6 +317,12 @@ footer{
   
   .con-4{
     bottom: 0;
+  }
+  
+  /* Hover Styles */
+  
+  .flex-item:hover .overlay{
+    opacity: 1;
   }
   
   /* Container 1 */
