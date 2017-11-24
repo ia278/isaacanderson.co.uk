@@ -5,12 +5,13 @@
 html{
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  line-height: 1.2;
 }
 
 body{
   background-color: #FFF;
+  line-height: 1.4;
   text-rendering: optimizeLegibility;
+  
 }
 
 a{
@@ -40,6 +41,10 @@ li{
 }
 
 /* Hover Styles */
+
+.flex-item:hover .overlay{
+  opacity: 1;
+}
 
 .button:active, .button:focus, .button:hover{
   background-color: #000;
@@ -73,7 +78,7 @@ li{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   overflow: hidden;
   text-align: center;
 }
@@ -166,9 +171,13 @@ header{
   width: 95%;
 }
 
-.flex-item{
+.flex-item, .flex-item-full{
   position: relative;
   width: 100%; 
+}
+
+.flex-item-full{
+  height: 120px;
 }
 
 .portfolio-image{
@@ -190,13 +199,12 @@ header{
   width: 100%;
 }
 
-.text{
+.text, .disclaimer-text{
   color: #FFF;
   font-size: 0.8rem;
   font-weight: 600;
   left: 50%;
   letter-spacing: 0.1rem;
-  line-height: 1.5rem;
   position: absolute;
   text-transform: uppercase;
   top: 50%;
@@ -207,6 +215,13 @@ header{
   transform: translate(-50%, -50%);
 }
 
+.disclaimer-text{
+  /* If needed, this can be deleted with no major effect on overall webpage */
+  color: #000;
+  font: 300 1.5rem/100% "Josefin Sans", sans-serif;
+  text-transform: lowercase;
+}
+
 /* Container 3 */
 
 .blurb{
@@ -215,7 +230,7 @@ header{
 }
 
 .blurb p{
-  text-align: left;
+  text-align: justify;
 }
 
 .blurb p a{
@@ -304,9 +319,10 @@ footer{
   
   .con-2{
     display: inline-block;
+    font-size: 1rem;
     position: relative;
     float: right;
-    margin: 100px auto 0;
+    margin: 120px auto 0;
     width: 70%;
   }
   
@@ -318,13 +334,7 @@ footer{
   .con-4{
     bottom: 0;
   }
-  
-  /* Hover Styles */
-  
-  .flex-item:hover .overlay{
-    opacity: 1;
-  }
-  
+
   /* Container 1 */
   
   .tagline{
@@ -376,8 +386,9 @@ article{
 
 .description p{
   text-align: justify;
-  line-height: 1.2;
-  margin: auto 5%;
+  margin: 0 auto;
+  max-width: 780px;
+  width: 75%; 
 }
 
 .file-options{
