@@ -2,6 +2,16 @@
 /* Global Values
 /*************************************/
 
+@font-face {
+  font-family: "Josefin Sans";
+  src: url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
+}
+
+@font-face{
+  font-family: "Raleway";
+  src: url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+}
+
 html{
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -28,7 +38,7 @@ li{
   background-color: #FFF;
   border: solid thin;
   display: inline-block;
-  font: 900 0.8rem "Raleway", sans-serif;
+  font: 200 0.8rem "Raleway", sans-serif;
   letter-spacing: 0.1rem;
   margin: 10px 3px 3px;
   padding: 15px;
@@ -202,7 +212,7 @@ header{
 .text, .disclaimer-text{
   color: #FFF;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 500;
   left: 50%;
   letter-spacing: 0.1rem;
   position: absolute;
