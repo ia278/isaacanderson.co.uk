@@ -1,16 +1,14 @@
-/*************************************/
-/* Global Values
-/*************************************/
-
 @import {
-  font-family: "Josefin Sans";
   src: url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700');
 }
 
 @import{
-  font-family: "Raleway";
   src: url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
 }
+
+/*************************************/
+/* Global Values
+/*************************************/
 
 html{
   font-family: "Raleway", sans-serif;
