@@ -626,6 +626,8 @@ textarea {
 	} /* hide logo, leaving only hamburger icon */
 
 }
+
+/* background images */
 #bg-griffon {
   background-image: url("../images/griffon.jpg");
 }
