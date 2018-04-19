@@ -1,11 +1,4 @@
 /* Global element styles */
-
-.content-section,
-.work-grid {
-	border: thin solid black;
-}
-
-
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
