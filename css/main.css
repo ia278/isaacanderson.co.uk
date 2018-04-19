@@ -1,4 +1,11 @@
 /* Global element styles */
+
+.content-section,
+.work-grid {
+	border: thin solid black;
+}
+
+
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -116,7 +123,9 @@ textarea {
 }
 
 .content-section {
+	margin: 0 auto;
 	max-width: 800px; /* acts as wrapper beause there is none */
+	width: 96%;
 }
 .content-section-center {
 	width: 96%;
