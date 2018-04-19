@@ -86,7 +86,8 @@ textarea {
 	max-height: 40px; /* IE does not scale SVG images */
 }
 .content-about-info, .work-grid, .contact-grid, .content-portfolio {
-	max-width: 800px; /* acts as wrapper beause there is none */
+	margin: 0 auto;
+	width: 95%;
 }
 .content-bg {
 	width: 100%;	
@@ -115,8 +116,7 @@ textarea {
 }
 
 .content-section {
-	max-width: 900px;
-	width: 90%;
+	max-width: 800px; /* acts as wrapper beause there is none */
 }
 .content-section-center {
 	width: 96%;
