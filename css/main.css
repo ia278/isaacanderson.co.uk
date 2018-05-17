@@ -597,9 +597,9 @@ textarea {
 		margin: 25px auto;
 	}
 	.content {
-		margin-right: 0;
+		margin-right: 0; /* so parallax has no whitespace */
 		margin-top: 0;
-		width: calc(100% - 200px);
+		width: calc(100% - 200px); /* so parallax has no whitespace */
 	}
 	.content-wrapper {
 		margin: 0;
