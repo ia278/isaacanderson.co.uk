@@ -295,7 +295,7 @@ textarea {
 .hide {
 	display: none;
 }
-.show-border {
+.border {
 	border: thin solid black;
 }
 .title-text {
@@ -318,6 +318,11 @@ textarea {
 }
 .work-grid-item:hover .overlay {
   opacity: 1;
+}
+.img-ver {
+	height: 400px;
+	overflow: hidden;
+	width: 600px;
 }
 
 /* Small screens (under 576px)*/
