@@ -138,7 +138,7 @@ textarea {
 	-ms-flex: 1;
 	flex: 1;
 }
-.fb-p-about, .fb-p-cad, .fb-p-con, .fb-p-links, .fb-p-nav, .fb-p-contact-grid, .fb-p-work-grid {
+.fb-p-about, .fb-p-cad, .fb-p-con, .fb-p-links, .fb-p-nav, .fb-p-contact-grid, .fb-p-content-posts, .fb-p-work-grid {
 	-ms-flex-line-pack: center;
 	align-content: center;
 	-webkit-box-align: center;
@@ -180,6 +180,14 @@ textarea {
 	-webkit-box-direction: normal;
 	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.fb-p-content-posts {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
@@ -283,6 +291,12 @@ textarea {
 }
 .overlay-text p {
 	display: none;
+}
+.hide {
+	display: none;
+}
+.show-border {
+	border: thin solid black;
 }
 .title-text {
 	font-family: "Josefin Sans", sans-serif;
@@ -461,6 +475,12 @@ textarea {
 		-webkit-box-pack: center;
 		-ms-flex-pack: center;
 		justify-content: center;
+	}
+	.fb-p-content-posts {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
 	}
 	.fb-p-links {
 		-webkit-box-orient: vertical;
