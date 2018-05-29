@@ -64,7 +64,60 @@ textarea {
 }
 
 /* Global classes and ids */
+.post-start {
+/*	border: thin solid red;*/
+	margin: 0 auto;
+	max-width: 800px;
+	min-height: calc(102vh - 80px);
+	position: relative;
+	text-align: justify;
+	width: 96%;
+}
 
+.post-vertical-align {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 96%;
+}
+
+.post-intro {
+	margin: 25px auto;
+}
+
+.post-intro p, .post-content p, .post-content li {
+	margin: 20px auto;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 100px;
+}
+
+.post-intro-options {
+	padding: 0;
+	text-align: center;
+}
+
+.post-content {
+	margin: 50px auto 0;
+	max-width: 800px;
+	text-align: justify;
+	width: 96%;
+}
+
+.post-content li {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.content-bg img {
+	min-height: 102vh;
+	width: 100%;
+}
 .bar1, .bar2, .bar3 {
 	background-color: #000;
 	height: 5px;
@@ -92,7 +145,9 @@ textarea {
 	width: 95%;
 }
 .content-bg {
-	width: 100%;	
+	position: relative;
+	overflow: hidden;
+	width: 100%;
 }
 .content-contact, .content-work {
 	padding: 40px 0;
@@ -246,8 +301,9 @@ textarea {
   display: inline-block;
   font: 200 0.8rem "Raleway", sans-serif;
   letter-spacing: 0.1rem;
-  margin: 10px 3px 3px;
+  margin: 5px 3px;
   padding: 15px;
+	text-align: center;
   text-transform: uppercase;
 }
 .portfolio-button:active, .portfolio-button:focus, .portfolio-button:hover{
@@ -292,6 +348,7 @@ textarea {
 .border {
 	border: thin solid black;
 }
+
 .title-text {
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 1.2rem;
@@ -315,7 +372,7 @@ textarea {
 }
 .img-ver {
 	height: 400px;
-	overflow: hidden;
+	overflow: hidden;`
 	width: 600px;
 }
 
@@ -323,7 +380,7 @@ textarea {
 
 .bg-1, .bg-2 {
 	background: #A82E4B center/cover no-repeat fixed;
-	min-height: 102vh;
+	min-height: 50vh;
 	opacity: 0.65;
   position: relative;
 }
@@ -450,7 +507,6 @@ textarea {
 	overflow: hidden;
 	position: relative;
 }
-
 .contact-grid p, .contact-form {
 	margin: 10px;
 }
@@ -465,6 +521,10 @@ textarea {
 @media all and (min-width: 36rem) {
 	
 	/* Global classes */
+	
+	.bg-1, .bg-2 {
+		min-height: 102vh;
+	}
 	
 	.fb-p-cad {
 		-webkit-box-orient: horizontal;
@@ -574,7 +634,14 @@ textarea {
 	}
 	
 	/*-----------------------------*/
-
+	.post-start {
+		margin: 0 auto;
+		min-height: 102vh;
+		position: relative;
+		text-align: justify;
+		width: 96%;
+	}
+	
 	.nav {
 		height: 102vh;
 		left: 0;
@@ -622,6 +689,7 @@ textarea {
 		height: 102vh;
 	}
 
+
 }
 
 /* Very small screens (below 280px) */
@@ -644,10 +712,10 @@ textarea {
 
 /* background images */
 #bg-griffon {
-  background-image: url("../images/griffon.jpg");
+  background-image: url("../images/BHT%20130.jpg");
 }
 #bg-rackets {
-  background-image: url("../images/racket2.jpg");	
+  background-image: url("../images/HEAD_MXG_3_DETAIL_1.jpg");	
 }
 #bg-ebm {
   background-image: url("../images/ebm.jpg");	
@@ -656,7 +724,7 @@ textarea {
   background-image: url("../images/eastgate2.jpg");	
 }
 #bg-brainstorming {
-  background-image: url("../images/lightbulb2.jpg");
+  background-image: url("../images/ideagrowth.jpg");
 }
 #bg-buildings h1, #bg-ebm  h1, #bg-brainstorming h1{
   color: #FFF;
