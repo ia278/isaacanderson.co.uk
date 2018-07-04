@@ -1,0 +1,134 @@
+// ======================================
+//  Post styles
+// ======================================
+
+// Resets
+.post {
+  @include font-size;
+  @include reset {
+    a {
+      color: $color-text;
+    }
+  }
+}
+
+// General styling
+.post {
+  @include center(100%, $margin-top: $height-header);  // Positions and centers bounding box to viewport
+  @include flexbox($justify-content: space-around);
+  font-family: $font-primary;
+  &-contents {
+    margin: 30px 0;
+    text-align: center;
+    width: 90%;
+    a {
+      color: $color-link;
+      &:hover, &:active, &:visited {
+        color: $color-link-hover;
+      }
+    }
+    blockquote {
+      max-width: $width-max-p-m;
+      text-align: center;
+    }
+    h1 {
+      margin: 50px 0;
+    }
+    h2 {
+      margin: 80px auto 30px;
+    }
+    p {
+      font-size: $font-size-p-xs;
+      margin-left: auto;    // Centers paragraph in container
+      margin-right: auto;   // Centers paragraph in container
+      text-align: justify;  // Creates block effect
+      width: 100%;
+      max-width: 100vw;
+    }
+    &:nth-child(1) {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+      img {
+        width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      max-width: $width-max;
+    }
+  }
+}
+
+// Breakpoints 
+@media all and (min-width: $breakpoint-s) {
+  .post {
+    &-contents {
+      p {
+        font-size: $font-size-p-s;
+        max-width: $width-max-p-s;
+      }
+    }
+  }
+}
+@media all and (min-width: $breakpoint-m) {
+  .post {
+    &-contents {
+      p {
+        font-size: $font-size-p;
+        max-width: $width-max-p-m;
+      } 
+    } 
+  }
+}
+
+// ======================================
+//  HTML code
+// ======================================
+
+//<section class="post" id="post">
+//  <div class="post-contents"><img src="images/laptop.jpg"></div>
+//  <div class="post-contents">
+//    <h1>Minim laborum id minim illum.</h1>
+//    <p>Tempor graviterque est mandaremus ex vidisse aut aute occaecat, in multos labore 
+//      ipsum voluptate ubi quae incididunt ea graviterque, nisi nostrud praesentibus 
+//      ita sunt probant sed esse fore non nescius tractavissent do commodo o a 
+//      consequat se mentitum. Fore id te summis ingeniis, amet o commodo. Non ex magna 
+//      illum nulla, anim ut deserunt, sed se culpa illum duis, noster familiaritatem 
+//      probant nulla appellat et <a href="index.html">culpa mentitum in tamen velit</a> si nisi qui cernantur si 
+//      ipsum, offendit ita deserunt, consequat a dolor mandaremus. Quid officia te anim 
+//      varias, incurreret summis dolor ea legam ea de quorum pariatur, si nisi 
+//      incurreret transferrem. Esse aliquip singulis. Est in domesticarum. Eu esse 
+//      arbitror iudicem, ingeniis id multos e qui illum doctrina arbitror, et tamen 
+//      deserunt quamquam, nulla sempiternum expetendis aute ingeniis est sed duis velit 
+//      quis appellat, sunt qui ne tamen doctrina, nam quorum imitarentur.</p>
+//    <blockquote>"Id iudicem eruditionem. Anim ingeniis ea sempiternum e si cillum e eram."</blockquote>
+//    <p>Quem aliquip se mentitum ad quae nam ut cillum aliquip, ad quo varias commodo 
+//      iis laboris si varias tempor, senserit ad fugiat incididunt, offendit multos 
+//      multos a aliqua ita et e veniam sunt multos nam quibusdam varias elit sed 
+//      aliqua. Expetendis ipsum senserit ex id quorum iis nisi, magna ingeniis te 
+//      relinqueret, et ubi esse probant. Se vidisse sempiternum, multos a te duis 
+//      arbitror ab eu hic summis malis culpa est aliqua vidisse reprehenderit, probant 
+//      fore fabulas iis sed incurreret sed ingeniis, magna aut ullamco, excepteur ubi 
+//      labore cupidatat. Ex fugiat fugiat quid appellat e eram nescius in 
+//      praetermissum. Mentitum praetermissum hic pariatur, quo arbitror e mandaremus 
+//      quo quo ita noster voluptate hic si doctrina o voluptate. Fore offendit a 
+//      admodum aut eu iis tractavissent, ab dolore qui ipsum, consequat et admodum. 
+//      Summis se occaecat si an si adipisicing. Singulis cohaerescant ita quibusdam, 
+//      eiusmod comprehenderit aut officia.</p>
+//      <img src="images/placeimg_640_480_tech%20(1).jpg" class="images-three">
+//      <img src="images/placeimg_640_480_tech%20(2).jpg" class="images-three">
+//      <img src="images/placeimg_640_480_tech%20(3).jpg" class="images-three">
+//      <img src="images/placeimg_640_480_tech%20(4).jpg" class="images-one">
+//    <p>Ne tamen iis dolore. De ex tractavissent ita an nam amet consequat, duis nostrud 
+//      ea cohaerescant quo tempor o ullamco. Quibusdam velit culpa ingeniis labore, 
+//      summis aut quamquam ubi minim ne e an tamen laboris, ita deserunt praetermissum 
+//      te e varias eram sed voluptate et doctrina illum expetendis ne consequat summis 
+//      anim est sunt, illum o quibusdam. Non elit duis nam laborum, id quid ingeniis. 
+//      Admodum legam anim sed eram. Ab dolor sint illum iudicem, ex fore quem irure 
+//      quamquam se magna eruditionem tempor anim proident, senserit legam velit sed 
+//      legam. Aute excepteur domesticarum, fore se mentitum non culpa. Elit officia ubi 
+//      concursionibus e ut illum nisi fore proident ubi et elit ipsum et litteris, quo 
+//      illum aliquip.</p>
+//  </div>
+//</section>
