@@ -20,19 +20,13 @@
   min-height: $height-footer;
   &-container {
     @include center(100%, 0, $width-max);
-    @include flexbox(row wrap, space-around);
-    writing-mode: vertical-lr;
     min-height: $height-footer;
     width: 90%;
   }
   &-contents {
+    @include center(90%, $margin-top: 20px, $margin-bottom: 10px);
     @include flexbox(row wrap, space-around, $align-items: flex-start);
-//    flex: 1 1 0%;  //IE bug
-    writing-mode: horizontal-tb;
-    margin-bottom: 10px;
-    margin-top: 20px;
     text-align: center;
-    width: 90%;
   }
 }
 

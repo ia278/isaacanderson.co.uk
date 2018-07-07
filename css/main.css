@@ -253,7 +253,7 @@ body {
   text-decoration-style: double; }
 
 #hero {
-  background: url("https://svgshare.com/i/7TW.svg") center/cover no-repeat; }
+  background: url("https://i.imgur.com/jxAwanF.png") center/cover no-repeat; }
 
 .hamburger {
   cursor: pointer;
@@ -366,30 +366,22 @@ body {
   align-items: center;
   background-color: #EEE;
   font-family: "Raleway", sans-serif;
-  min-height: 18vh; }
+  min-height: 15vh; }
   .footer-container {
     margin: 0 auto 0;
     max-width: 1080px;
     width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    writing-mode: vertical-lr;
-    min-height: 18vh;
+    min-height: 15vh;
     width: 90%; }
   .footer-contents {
+    margin: 20px auto 10px;
+    width: 90%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: center;
     align-items: flex-start;
-    writing-mode: horizontal-tb;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    text-align: center;
-    width: 90%; }
+    text-align: center; }
 
 @media all and (min-width: 668px) {
   .footer-contents {
@@ -782,7 +774,7 @@ body {
   align-items: center;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  height: calc(100vh - 65px - 18vh); }
+  height: calc(100vh - 65px - 15vh); }
   .error-container {
     width: 1080px; }
     .error-container h1, .error-container h4 {
