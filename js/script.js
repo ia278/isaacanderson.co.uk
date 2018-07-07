@@ -22,7 +22,6 @@ const animateHamburger = () => {
 	actionOnWindowResize();
 };
 
-
 // Event listeners
 hamburger.addEventListener("click", animateHamburger);
 window.addEventListener("resize", actionOnWindowResize);

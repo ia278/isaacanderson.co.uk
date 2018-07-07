@@ -86,6 +86,7 @@
 }
 .images {
   text-align: center;
+  max-width: $width-max;
   &-one {
     width: 100%;
   }
@@ -125,5 +126,5 @@
 //  ID styles
 // ======================================
 #hero {
-  background: url(../images/london.svg) center/cover no-repeat;
+  background: url("https://svgshare.com/i/7TW.svg") center/cover no-repeat;
 }                // Background for intro
