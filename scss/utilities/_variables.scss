@@ -4,6 +4,7 @@
 
 // Breakpoints
 $breakpoint-s: 320px;                           // Breakpoint where small screens start (phones)
+$breakpoint-m-card: 618px;                      // Breakpoint where medium screens start (tablets)
 $breakpoint-m: 668px;                           // Breakpoint where medium screens start (tablets)
 $breakpoint-l: 950px;                           // Breakpoint where large screens start (desktops)
 
@@ -19,11 +20,12 @@ $color-bg-cta-allwork: #111;                    // Background color "all work" m
 $color-bg-cta-contact: #111;                    // Background color "contact" modules
 $color-bg-allwork: #FFF;                        // Background color for footer module
 $color-bg-card: #F5F5F5;                        // Background color for cards
+$color-bg-card-image: #F5F5DC;                  // Background color for card images (used for transparent images)
 $color-bg-footer: #EEE;                         // Background color for footer module
-$color-bg-header: #FFF;                         // Background color for header module
+$color-bg-header: #222;                         // Background color for header module
 $color-bg-project: #CCC;                        // Background color for project modules (even only)
 $color-bg-related: #F5F5F5;                     // Background color for related module
-$color-header: #000;                            // Header text color
+$color-header: #FFF;                            // Header text color
 $color-link: #C33;                              // Link color
 $color-link-hover: darken($color-link, 15%);    // Link color on hover
 $color-logo-dribbble: #EA4C89;                  // Dribbble color

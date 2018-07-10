@@ -27,7 +27,7 @@
     margin: 10px auto;
     &:nth-child(2) {
       @include flexbox($justify-content: space-around, $align-items: flex-start);
-      width: 98%;                                    // Increase width of contents inside container
+      width: 90%;                                    // Increase width of contents inside container
     }                           // Container with project cards      
   }
   &-card {
@@ -47,6 +47,7 @@
       width: 100%;
     }
     &-image {
+      background-color: $color-bg-card-image;
       height: 180px;
       width: 100%;
       position: relative;
@@ -77,7 +78,7 @@
     }
   }
 }
-@media all and (min-width: $breakpoint-m) {
+@media all and (min-width: $breakpoint-m-card) {
   .all-work {
     &-card {
       font-size: $font-size-card-p;
