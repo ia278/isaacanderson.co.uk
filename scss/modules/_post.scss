@@ -38,6 +38,7 @@
       margin: 60px auto 30px;
     }
     li {
+      font-size: $font-size-p-xs;
       padding: 0 10px;      // Resets padding given to bullets, and centers list
     }
     p, ul {
@@ -75,7 +76,7 @@
       p, ul {
         max-width: $width-max-p-s;
       }
-      p {
+      p, li {
         font-size: $font-size-p-s;
       }
     }
@@ -87,7 +88,7 @@
       p, ul {
         max-width: $width-max-p-m;
       }
-      p {
+      p, li {
         font-size: $font-size-p;   
       }
     } 
