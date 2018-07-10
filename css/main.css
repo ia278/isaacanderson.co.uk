@@ -847,15 +847,20 @@ body {
       text-align: center; }
     .post-contents h1 {
       margin: 50px 0; }
-    .post-contents h2 {
-      margin: 80px auto 30px; }
-    .post-contents p {
-      font-size: 14px;
+    .post-contents h2, .post-contents h3, .post-contents h4, .post-contents h5, .post-contents h6 {
+      margin: 60px auto 30px; }
+    .post-contents li {
+      padding: 0 10px; }
+    .post-contents p, .post-contents ul {
       margin-left: auto;
       margin-right: auto;
-      text-align: justify;
+      text-align: justify; }
+    .post-contents p {
+      font-size: 14px;
       width: 100%;
       max-width: 100vw; }
+    .post-contents ul {
+      margin-bottom: 40px; }
     .post-contents:nth-child(1) {
       width: 100%;
       overflow: hidden;
@@ -867,13 +872,15 @@ body {
       max-width: 1080px; }
 
 @media all and (min-width: 320px) {
+  .post-contents p, .post-contents ul {
+    max-width: 550px; }
   .post-contents p {
-    font-size: 17px;
-    max-width: 550px; } }
+    font-size: 17px; } }
 @media all and (min-width: 668px) {
+  .post-contents p, .post-contents ul {
+    max-width: 630px; }
   .post-contents p {
-    font-size: 20px;
-    max-width: 630px; } }
+    font-size: 20px; } }
 .related {
   font-size: 10px; }
   @media all and (min-width: 320px) {

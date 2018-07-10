@@ -2,4 +2,3 @@ TO DO:
 
 search results page
 blog post page
-redo footer (weird sizing issue)
