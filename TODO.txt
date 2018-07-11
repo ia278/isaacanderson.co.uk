@@ -1,21 +1,8 @@
 TO DO:
 
-maintence page/testing section or area
+maintence page
+testing section or area
 search results page
 blog post page
 archive section, LINKS TO OLD SITE
 meta stuff
-
-post main images must have minimum aspect ratio of 16:9 (1.778)
-	THIS CAN BE HIGHER IF NEEDED (I.E. HEIGHT CAN BE SHORTER)
-	max width 1920px
-
-content images can be any size, but if two are used together they must be the same aspect ratio
-	size if it can be done 1024, aspect 16:9
-
-thumbnails MUST BE 16:9 (1.778)
-	ideal size is 350 x 197
-
-max width of any image is 1920px x 1080px
-
-
