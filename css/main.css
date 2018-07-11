@@ -253,7 +253,7 @@ body {
   text-decoration-style: double; }
 
 #hero {
-  background: url("https://i.imgur.com/jxAwanF.png") center/cover no-repeat; }
+  background: url("https://i.imgur.com/0unzGaD.png") center/cover no-repeat; }
 
 .hamburger {
   cursor: pointer;
@@ -867,7 +867,8 @@ body {
       position: relative;
       margin-top: 0; }
       .post-contents:nth-child(1) img {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
     .post-contents:nth-child(2) {
       max-width: 1080px; }
 
