@@ -15,10 +15,9 @@
 // General styling
 .post {
   @include center(100%, $margin-top: $height-header);  // Positions and centers bounding box to viewport
-  @include flexbox($justify-content: space-around);
   font-family: $font-primary;
   &-contents {
-    margin: 30px 0;
+    margin: 30px auto;
     text-align: center;
     width: 90%;
     a {
@@ -35,10 +34,11 @@
       margin: 50px 0;
     }
     h2, h3, h4, h5, h6 {
-      margin: 60px auto 30px;
+      margin: 50px auto 25px;
     }
     li {
       font-size: $font-size-p-xs;
+      margin: 10px auto;
       padding: 0 10px;      // Resets padding given to bullets, and centers list
     }
     p, ul {
@@ -48,6 +48,7 @@
     }
     p {
       font-size: $font-size-p-xs;
+      margin: 30px auto;
       width: 100%;
       max-width: 100vw;
     }
@@ -59,7 +60,7 @@
       max-width: 1920px;
       overflow: hidden;
       position: relative;
-      margin: 0;
+      margin-top: 0;
       img {
         width: 100%;
       }
