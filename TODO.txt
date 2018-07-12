@@ -1,8 +1,14 @@
 TO DO:
 
+animate hamburger
 maintence page
 testing section or area
-search results page
-blog post page
+search results page (like bbc)
+blog post page (like idea)
 archive section, LINKS TO OLD SITE
 meta stuff
+no hover on small screens
+buttons should stay color when clicked (active)
+do for es6 and webkit things (learn npm and gulp)
+textpattern
+change nth child 3 in about page so the name is different (resumes)

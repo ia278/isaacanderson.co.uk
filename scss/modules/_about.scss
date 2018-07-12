@@ -31,7 +31,7 @@
     font-size: $font-size-xs;
     margin: 10px auto;
     width: 100%;
-    p {
+    p, ul {
       font-size: $font-size-p-xs;
       margin-left: auto;
       margin-right: auto;
@@ -45,7 +45,7 @@
           color: $color-link-hover;
         }
       }
-    }                          // Paragraph container
+    }                         // Paragraph container
     &:nth-child(3) {
       @include flexbox($justify-content: space-around, $align-items: flex-start);
       font-family: $font-secondary;
@@ -69,7 +69,7 @@
   .about {
     &-contents {
       font-size: $font-size-s;
-      p {
+      p, ul {
         font-size: $font-size-p-s;
         max-width: $width-max-p-s;
       }
@@ -85,7 +85,7 @@
   .about {
     &-contents {
       font-size: $font-size;
-      p {
+      p, ul {
         font-size: $font-size-p;
         max-width: $width-max-p-m;
       }
