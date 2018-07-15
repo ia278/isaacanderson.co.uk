@@ -266,13 +266,13 @@ body {
   transition: 0.5s ease;
   width: 35px; }
 
-.bar1 .change {
+.change .bar1 {
   transform: rotate(-45deg) translate(-9px, 6px); }
 
-.bar2 .change {
+.change .bar2 {
   opacity: 0; }
 
-.bar3 .change {
+.change .bar3 {
   transform: rotate(45deg) translate(-8px, -8px); }
 
 .header {

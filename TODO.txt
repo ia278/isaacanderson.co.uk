@@ -2,9 +2,7 @@ TO DO:
 
 Small
 
-
-- meta tags
-- animate hamburger
+- meta tags (use if section to change description, don't index testing section)
 - no hover on small screens
 - buttons should stay color when clicked (active)
 - change nth child 3 in about page so the name is different (resumes)
