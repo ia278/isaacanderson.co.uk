@@ -1,14 +1,20 @@
 TO DO:
 
-animate hamburger
-maintence page
-testing section or area
-search results page (like bbc)
-blog post page (like idea)
-archive section, LINKS TO OLD SITE
-meta stuff
-no hover on small screens
-buttons should stay color when clicked (active)
-do for es6 and webkit things (learn npm and gulp)
-textpattern
-change nth child 3 in about page so the name is different (resumes)
+Small
+
+
+- meta tags
+- animate hamburger
+- no hover on small screens
+- buttons should stay color when clicked (active)
+- change nth child 3 in about page so the name is different (resumes)
+
+Big
+
+- maintenance page
+- search results page (design like bbc)
+- blog post section
+- testing section
+- archive section, with links to older versions of site
+- npm and gulp for auto ES5/es6 and webkit 
+
