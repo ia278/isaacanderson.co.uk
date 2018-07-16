@@ -590,8 +590,6 @@ body {
   .about h1, .about h2, .about h3, .about h4, .about h5, .about h6 {
     font-family: "Josefin Sans", sans-serif;
     margin: 0; }
-  .about a {
-    text-decoration: none; }
   .about-contents:nth-child(3) p {
     margin: 0 auto; }
 
@@ -640,7 +638,8 @@ body {
       width: 240px; }
       .about-contents:nth-child(3) a {
         color: #C33;
-        fill: #C33; }
+        fill: #C33;
+        text-decoration: none; }
         .about-contents:nth-child(3) a:hover {
           color: #8f2424;
           fill: #8f2424;
