@@ -2,17 +2,18 @@ TO DO:
 
 Small
 
-- meta tags (use if section to change description, don't index testing section)
 - no hover on small screens
 - buttons should stay color when clicked (active)
 - change nth child 3 in about page so the name is different (resumes)
 
 Big
 
-- maintenance page
 - search results page (design like bbc)
+- reduce image sizes
+- redesign image section (images should always be 16 x 9)
+- maintenance page (get plugin)
 - blog post section
-- testing section
 - archive section, with links to older versions of site
 - npm and gulp for auto ES5/es6 and webkit 
+
 
