@@ -7,7 +7,6 @@ Small
 - no hover on small screens
 - buttons should stay color when clicked (active)
 - change nth child 3 in about page so the name is different (resumes)
-- menu should close pressing anywhere on screen
 
 Big
 
