@@ -2,6 +2,10 @@
 //  Base element styles
 // ====================================*/
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   font-family: $font-primary;
   font-size: $font-size;
@@ -22,6 +26,7 @@ blockquote {
 }
 body {
   background: $color-bg;
+  box-sizing: border-box;
 	line-height: $line-height;
   text-rendering: optimizeLegibility;
   

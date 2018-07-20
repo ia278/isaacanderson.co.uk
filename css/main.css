@@ -126,6 +126,9 @@ template {
 /* ======================================
 //  Base element styles
 // ====================================*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 html {
   font-family: "Raleway", sans-serif;
   font-size: 16px; }
@@ -145,6 +148,7 @@ blockquote {
 
 body {
   background: #FFF;
+  box-sizing: border-box;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
   display: flex;
