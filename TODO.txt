@@ -9,13 +9,13 @@ Small
 
 Big
 
+- archive section, with links to older versions of site (host on ia278.github.io) - use actual text where you can
 - article contents list (based on h2 and h3 titles)
 - larger related cards
 - search results page (design like bbc)
 - redesign image section (images should always be 16 x 9)
 - maintenance page (get plugin)
 - blog post section
-- archive section, with links to older versions of site (host on ia278.github.io)
 - rename repo to isaacanderson.co.uk, link to this
 - npm and gulp for auto ES5/es6 and webkit 
 
