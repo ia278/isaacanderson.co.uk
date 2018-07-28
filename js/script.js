@@ -33,6 +33,11 @@ const animateHamburger = () => {
 const noMenuDisplay = () => {
   hamburger.classList.toggle("change");
 	options.style.display = "none";
+  for (var i = 0; i < section.length; i++) {
+    section[i].removeEventListener("click", noMenuDisplay);
+  }
+  article.removeEventListener("click", noMenuDisplay);
+  footer.removeEventListener("click", noMenuDisplay);
 };
 
 // Event listeners
