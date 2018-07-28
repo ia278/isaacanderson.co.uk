@@ -18,7 +18,7 @@
 // General styling
 .project {
   @include center(100%, 0);
-  @include flexbox(row wrap);
+  @include flexbox(column wrap);
   font-family: $font-primary;
   height: auto;
   min-height: $height-project-s;

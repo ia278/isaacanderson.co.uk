@@ -7,12 +7,10 @@ Small
 - buttons should stay color when clicked (active)
 - change nth child 3 in about page so the name is different (resumes)
 - get accepted to dribbble
-- numbered lists
+- sort out "project" ia - sizing issues on IE and Firefox
 
 Big
 
-- flexbox bug (items on homepage are hidden)
-- archive section, with links to older versions of site (host on ia278.github.io) - use actual text where you can
 - article contents list (based on h2 and h3 titles)
 - larger related cards
 - search results page (design like bbc)
