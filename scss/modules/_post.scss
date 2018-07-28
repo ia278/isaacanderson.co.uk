@@ -41,7 +41,7 @@
       margin: 10px auto;
       padding: 0 10px;      // Resets padding given to bullets, and centers list
     }
-    p, ul {
+    p, ul, ol {
       margin-left: auto;    // Centers paragraph in container
       margin-right: auto;   // Centers paragraph in container
       text-align: justify;  // Creates block effect
@@ -52,7 +52,7 @@
       width: 100%;
       max-width: 100vw;
     }
-    ul {
+    ul, ol {
       margin-bottom: 40px;
     }
     &:nth-child(1) {
@@ -76,7 +76,7 @@
 @media all and (min-width: $breakpoint-s) {
   .post {
     &-contents {
-      p, ul {
+      p, ul, ol {
         max-width: $width-max-p-s;
       }
       p, li {
@@ -88,7 +88,7 @@
 @media all and (min-width: $breakpoint-m) {
   .post {
     &-contents {
-      p, ul {
+      p, ul, ol {
         max-width: $width-max-p-m;
       }
       p, li {

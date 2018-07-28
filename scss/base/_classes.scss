@@ -17,7 +17,7 @@
   font-size: $font-size-xs;
   padding: 20px;
   text-align: center;
-  &:hover, &:active, &:visited {
+  &:hover {
     color: $button-dark-before;
     background: transparent;
     transition: $transition-hoverButton;
@@ -43,7 +43,7 @@
   margin-bottom: 10px;
   padding: 20px;
   text-align: center;
-  &:hover, &:active, &:visited {
+  &:hover {
     color: $button-light-before;
     background: transparent;
     transition: $transition-hoverButton;

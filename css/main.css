@@ -170,7 +170,7 @@ body {
   font-size: 10px;
   padding: 20px;
   text-align: center; }
-  .btn-dark:hover, .btn-dark-s:hover, .btn-dark:active, .btn-dark-s:active, .btn-dark:visited, .btn-dark-s:visited {
+  .btn-dark:hover, .btn-dark-s:hover {
     color: #111;
     background: transparent;
     transition: 0.75s ease; }
@@ -194,7 +194,7 @@ body {
   margin-bottom: 10px;
   padding: 20px;
   text-align: center; }
-  .btn-light:hover, .btn-light-s:hover, .btn-light:active, .btn-light-s:active, .btn-light:visited, .btn-light-s:visited {
+  .btn-light:hover, .btn-light-s:hover {
     color: #FFF;
     background: transparent;
     transition: 0.75s ease; }
@@ -450,7 +450,7 @@ body {
   margin: 0 auto 0;
   width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -852,7 +852,7 @@ body {
       font-size: 14px;
       margin: 10px auto;
       padding: 0 10px; }
-    .post-contents p, .post-contents ul {
+    .post-contents p, .post-contents ul, .post-contents ol {
       margin-left: auto;
       margin-right: auto;
       text-align: justify; }
@@ -861,7 +861,7 @@ body {
       margin: 30px auto;
       width: 100%;
       max-width: 100vw; }
-    .post-contents ul {
+    .post-contents ul, .post-contents ol {
       margin-bottom: 40px; }
     .post-contents:nth-child(1) {
       width: 100%;
@@ -876,12 +876,12 @@ body {
       max-width: 1080px; }
 
 @media all and (min-width: 320px) {
-  .post-contents p, .post-contents ul {
+  .post-contents p, .post-contents ul, .post-contents ol {
     max-width: 550px; }
   .post-contents p, .post-contents li {
     font-size: 17px; } }
 @media all and (min-width: 668px) {
-  .post-contents p, .post-contents ul {
+  .post-contents p, .post-contents ul, .post-contents ol {
     max-width: 630px; }
   .post-contents p, .post-contents li {
     font-size: 20px; } }
