@@ -13,8 +13,9 @@
   @include center(100%, $height-header);             // Positions and centers intro under header bar.
   @include flexbox;
   font-family: $font-primary;
+  max-height: 1080px;
   text-align: center;
-  min-height: calc(#{$height-hero-s} - #{$height-header});
+  min-height: calc(#{$height-hero-s} - #{$height-header});  
   &-container {
     width: $width-max;
     h1, h4 {

@@ -21,7 +21,7 @@
   @include flexbox(column wrap);
   font-family: $font-primary;
   height: auto;
-  min-height: $height-project-s;
+  min-height: $height-project-xs;
   &-container {
     @include center($width-max: $width-max);
     @include flexbox(column wrap, space-around);
@@ -67,7 +67,6 @@
 
 @media all and (min-width: $breakpoint-m) {
   .project {
-    min-height: $height-project-m;
     &-container {
       flex-flow: row wrap;
     }

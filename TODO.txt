@@ -7,7 +7,7 @@ Small
 - buttons should stay color when clicked (active)
 - change nth child 3 in about page so the name is different (resumes)
 - get accepted to dribbble
-- sort out "project" ia - sizing issues on IE and Firefox
+
 
 Big
 
@@ -17,6 +17,7 @@ Big
 - redesign image section (images should always be 16 x 9)
 - maintenance page (get plugin)
 - blog post section
+- sort out "project" ia - sizing issues on IE and Firefox
 - npm and gulp for auto ES5/es6 and webkit 
 
 

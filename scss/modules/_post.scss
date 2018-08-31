@@ -41,10 +41,13 @@
       margin: 10px auto;
       padding: 0 10px;      // Resets padding given to bullets, and centers list
     }
-    p, ul, ol {
+    p, ul, ol, h5 {
       margin-left: auto;    // Centers paragraph in container
       margin-right: auto;   // Centers paragraph in container
       text-align: justify;  // Creates block effect
+    }
+    h5 {
+      text-align: center;   // Removes block effect
     }
     p {
       font-size: $font-size-p-xs;
@@ -76,7 +79,7 @@
 @media all and (min-width: $breakpoint-s) {
   .post {
     &-contents {
-      p, ul, ol {
+      p, ul, ol, h5 {
         max-width: $width-max-p-s;
       }
       p, li {
@@ -88,7 +91,7 @@
 @media all and (min-width: $breakpoint-m) {
   .post {
     &-contents {
-      p, ul, ol {
+      p, ul, ol, h5 {
         max-width: $width-max-p-m;
       }
       p, li {
