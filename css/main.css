@@ -208,6 +208,9 @@ body {
 .btn-light-s {
   padding: 5px 10px; }
 
+.center {
+  margin: 0 auto; }
+
 .copyright {
   color: #6D6968;
   font-weight: normal;
@@ -834,14 +837,14 @@ body {
   margin: 65px auto 0;
   width: 100%;
   font-family: "Raleway", sans-serif; }
+  .post a {
+    color: #C33; }
+    .post a:hover, .post a:active, .post a:visited {
+      color: #8f2424; }
   .post-contents {
     margin: 30px auto;
     text-align: center;
     width: 90%; }
-    .post-contents a {
-      color: #C33; }
-      .post-contents a:hover, .post-contents a:active, .post-contents a:visited {
-        color: #8f2424; }
     .post-contents blockquote {
       max-width: 630px;
       text-align: center; }
@@ -877,6 +880,19 @@ body {
         height: auto; }
     .post-contents:nth-child(2) {
       max-width: 1080px; }
+  .post-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    .post-list img {
+      width: 100%; }
+    .post-list h4 {
+      margin: 20px auto; }
+    .post-list p:first-child {
+      margin: 20px auto;
+      text-align: center; }
 
 @media all and (min-width: 320px) {
   .post-contents p, .post-contents ul, .post-contents ol, .post-contents h5 {

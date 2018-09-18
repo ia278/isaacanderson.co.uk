@@ -16,16 +16,16 @@
 .post {
   @include center(100%, $margin-top: $height-header);  // Positions and centers bounding box to viewport
   font-family: $font-primary;
+  a {
+    color: $color-link;
+    &:hover, &:active, &:visited {
+      color: $color-link-hover;
+    }
+  }
   &-contents {
     margin: 30px auto;
     text-align: center;
     width: 90%;
-    a {
-      color: $color-link;
-      &:hover, &:active, &:visited {
-        color: $color-link-hover;
-      }
-    }
     blockquote {
       max-width: $width-max-p-m;
       text-align: center;
@@ -72,6 +72,22 @@
     &:nth-child(2) {
       max-width: $width-max;
     }  // Post content
+  }
+  &-list {
+    @include flexbox($flex-flow: row wrap, $justify-content: center, $display: flex, $align-content: center, $align-items: center);
+    img {
+      width: 100%;
+    }
+    h4 {
+      margin: 20px auto;
+    }
+    p:first-child {
+      margin: 20px auto;
+      text-align: center;
+    }
+    
+    
+    
   }
 }
 
