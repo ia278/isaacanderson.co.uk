@@ -19,5 +19,11 @@ Big
 - blog post section
 - sort out "project" ia - sizing issues on IE and Firefox
 - npm and gulp for auto ES5/es6 and webkit 
+- mobile menu change to hover instead of click (click messes up print view) 
+- replace bulleted lists with image based bulleted lists
+
+
+JS to insert target="_blank" into article links
+	     insert div around visual image
 
 
