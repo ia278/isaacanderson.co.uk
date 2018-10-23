@@ -1,45 +1,43 @@
 // Constants
-const article = document.querySelector("article");
-const footer = document.querySelector("footer");
-const hamburger = document.querySelector(".hamburger");
-const options = document.querySelector(".header-options");
-const section = document.querySelectorAll("section");
+const br = document.querySelectorAll(".related-contents br")
+const linksInArticle = document.querySelectorAll(".article-contents a");
+let prevScrollpos = window.pageYOffset;
+
 
 // Functions
-const actionOnWindowResize = () => {
-	const windowWidth = window.innerWidth;
-	if (windowWidth >= 668) {
-		options.style.display = "block";
-		return;
-	}
-	options.style.display = "none";
-	hamburger.classList.remove("change");
-};
-const animateHamburger = () => {
-	hamburger.classList.toggle("change");
-	if (hamburger.classList.contains("change")) {
-		options.style.display = "block";
-    for (let i = 0; i < section.length; i++) {
-      section[i].addEventListener("click", noMenuDisplay);
-    } 
-    article.addEventListener("click", noMenuDisplay);
-    footer.addEventListener("click", noMenuDisplay);
-		return;
-	}
-	options.style.display = "none";
-	actionOnWindowResize();
-};
-
-const noMenuDisplay = () => {
-  hamburger.classList.toggle("change");
-	options.style.display = "none";
-  for (var i = 0; i < section.length; i++) {
-    section[i].removeEventListener("click", noMenuDisplay);
+const addTargetAttribute = () => {
+  for (let i = 0; i < linksInArticle.length; i++) {
+    linksInArticle[i].setAttribute("target", "_blank");
   }
-  article.removeEventListener("click", noMenuDisplay);
-  footer.removeEventListener("click", noMenuDisplay);
 };
 
-// Event listeners
-hamburger.addEventListener("click", animateHamburger);
-window.addEventListener("resize", actionOnWindowResize);
+const removeBr = () => {
+  for (let i = 0; i < br.length; i++) {
+    br[i].parentNode.removeChild(br[i]);
+  }
+};
+
+
+// Invoke function
+addTargetAttribute();
+removeBr();
+
+
+
+
+
+//const showMenuOnScroll = () => {
+//  const windowWidth = window.innerWidth;
+//	if (windowWidth >= 768) {
+//		return;
+//	} 
+//  let currentScrollPos = window.pageYOffset;
+//  if (prevScrollpos > currentScrollPos) {
+//    document.querySelector(".header").style.top = "0";
+//  } else {
+//    document.querySelector(".header").style.top = "-250px";
+//  }
+//  prevScrollpos = currentScrollPos;
+//}
+//
+//window.addEventListener("scroll", showMenuOnScroll);

@@ -14,5 +14,5 @@ For posts;
 
 * The maximum width of images are;
   - HERO: 1920 x 1080
-  - CONTENT: 1024 x 576
+  - CONTENT: 1080 x 608
   - THUMBNAILS: 350 x 197

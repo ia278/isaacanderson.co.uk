@@ -1,0 +1,54 @@
+/* ======================================
+//  Article styles (also used for "about")
+// ====================================*/
+
+.article {
+  @include flexbox(column wrap, center);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  figure {
+    @include flexbox(row wrap, center);
+    margin: 0;
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;    
+    img {
+      width: 100%;
+    }
+  }
+  section {
+    padding: 0 10px;
+    width: 98%;
+  }
+  blockquote {
+    margin: 20px auto;
+    max-width: $width-max-p-s;
+    text-align: center;
+  }
+  li {
+    padding: 0 10px;
+  }
+  ol, ul {
+    max-width: $width-max-p-s;
+    text-align: justify;
+  }
+  p {
+    margin: 30px auto;
+    max-width: $width-max-p-s;
+    text-align: justify;
+  }
+}
+
+@media all and (min-width: $breakpoint-m) {
+  .article {
+    margin: $height-header auto 0;
+    section {
+      max-width: $width-max-website;
+    }
+    blockquote, p, ol, ul {
+      max-width: $width-max-p-m;
+    }
+  }
+}

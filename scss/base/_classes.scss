@@ -1,95 +1,55 @@
-// ======================================
+/* ======================================
 //  Class styles
-// ======================================
+// ====================================*/
 
-.bold {
-  font-weight: bold;
-}
 .border {
   border: thin solid red;
 }
-.btn-dark {
-  background: $button-dark-before;
-  border: 2px solid $button-dark-before;
-  color: $button-dark-after;
-  display: inline-block;
-  font-family: $font-primary;
-  font-size: $font-size-xs;
-  padding: 20px;
-  text-align: center;
+
+
+.active {
+  border-bottom: 3px solid $color-header;
   &:hover {
-    color: $button-dark-before;
-    background: transparent;
-    transition: $transition-hoverButton;
-    }
-  @media all and (min-width: $breakpoint-s) {
-    font-size: $font-size-s;
-  }
-  @media all and (min-width: $breakpoint-m) {
-    font-size: $font-size;
+    border-bottom: 3px solid $color-link;
+    transition: $transition-hover;
   }
 }
-.btn-dark-s {
-  @extend .btn-dark;
-  padding: 5px 10px;
-}
-.btn-light {
-  background: $button-light-before;
-  border: 2px solid $button-light-before;
-  color: $button-light-after;
-  display: inline-block;
-  font-family: $font-primary;
-  font-size: $font-size-xs;
-  margin-bottom: 10px;
-  padding: 20px;
-  text-align: center;
-  &:hover {
-    color: $button-light-before;
-    background: transparent;
-    transition: $transition-hoverButton;
-    }
-  @media all and (min-width: $breakpoint-s) {
-    font-size: $font-size-s;
-  }
-  @media all and (min-width: $breakpoint-m) {
-    font-size: $font-size;
-  }
-}
-.btn-light-s {
-  @extend .btn-light;
-  padding: 5px 10px;
-}
-.center {
-  margin: 0 auto;
-}
-.copyright {
-  color: #6D6968;
-  font-weight: normal;
-  letter-spacing: 0.08rem;
-}
-.dribbble {
-  &:hover, &:active, &:visited {
-    fill: $color-logo-dribbble;
-    transition: $transition-hoverLink;
-  }
-}
-.github {
-  &:hover, &:active, &:visited {
-    fill: $color-logo-github;
-    transition: $transition-hoverLink;
-  }
+.bold {
+  font-weight: bold;
 }
 .hide {
   display: none;
+}
+.hide-large {
+  @media all and (min-width: $breakpoint-m) {
+    display: none;
+  }
 }
 .hide-small {
   @media all and (max-width: $breakpoint-m) {
     display: none;
   }
 }
+.icons-div {
+  @include flexbox(row wrap, space-around);
+  fill: $color-link;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  width: $width-iconsdiv;
+  a {
+    text-decoration: none;
+    &:hover {
+      fill: $color-link-hover;
+    }
+  }
+  .mini {
+    margin: 0;
+    text-align: center;
+  }
+}
 .images {
   text-align: center;
-  max-width: $width-max;
+  max-width: $width-max-website;
   &-one {
     width: 98.5%;
   }
@@ -97,25 +57,74 @@
     width: 49%;
   }
   &-three {
-    width: 32.55%;
+    width: 32%;
   }
   &-four {
-    width: 24.33%;
+    width: 23.5%;
   }
 }
 .italic {
   font-style: italic;
-}
-.linkedin {
-  &:hover, &:active, &:visited {
-    fill: $color-logo-linkedin;
-    transition: $transition-hoverLink;
+}   
+.list-card {
+  display: inline-block;
+  margin: 20px auto;
+  max-width: $width-max-p-s;
+  vertical-align: top;
+  width: 100%;
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+  h4 {
+    margin: 10px auto;
+    text-align: center;
+  }
+  p, .mini {
+    margin: 10px auto 0;
+    text-align: justify;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    padding: 0 10px;
+    width: 350px;
   }
 }
-.medium {
-  &:hover, &:active, &:visited {
-    fill: $color-logo-medium;
-    transition: $transition-hoverLink;
+.mini {
+  font-size: $font-size-h5;
+}
+.related-card {
+  color: $color-text;
+  display: inline-block;
+  margin: 20px auto 30px;
+  max-width: $width-max-p-s;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  width: 90%;
+  &:hover {
+    color: $color-text;
+  }
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
+  h4 {
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: underline;
+  }
+  p, .mini {
+    margin: 10px auto 0;
+  }
+  @media all and (min-width: $breakpoint-m) {
+    padding: 0 10px;
+    width: 350px;
+    &:hover {
+      color: $color-text;
+      overflow: hidden;
+      transition: all .3s ease-in-out;
+      transform: scale(1.1);
+    }
   }
 }
 .underline {
@@ -126,9 +135,55 @@
   text-decoration-style: double;
 }
 
-// ======================================
+/* ======================================
 //  ID styles
-// ======================================
-#hero {
-  background: url("https://i.imgur.com/0unzGaD.png") center/cover no-repeat;
-}                // Background for intro
+// ====================================*/
+
+#appy {
+  background-color: $color-bg-project-appy;
+  .project-desc {
+    color: $color-text-alt;    
+  }
+}
+#dribbble {
+  &:hover {
+    color: $color-logo-dribbble;
+    transition: $transition-hover;
+  }
+}
+#ebm {
+  background-color: $color-bg-project-ebm;
+}
+#github {
+  &:hover {
+    color: $color-logo-github;
+    transition: $transition-hover;
+  }
+}
+#linkedin {
+  &:hover {
+    color: $color-logo-linkedin;
+    transition: $transition-hover;
+  }
+}
+#medium {
+  &:hover {
+    color: $color-logo-medium;
+    transition: $transition-hover;
+  }
+}
+#more {
+  background-color: $color-bg-project-more;
+  .project-desc {
+    color: $color-text-alt;    
+  }
+}
+#polygon {
+  background-color: $color-bg-project-polygon;
+}
+#rules {
+  background-color: $color-bg-project-rules;
+}
+#website {
+  background-color: $color-bg-project-website;
+}
